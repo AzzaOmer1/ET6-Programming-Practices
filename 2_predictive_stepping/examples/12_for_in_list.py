@@ -14,4 +14,7 @@ backwards = []
 for item in to_reverse:
     backwards.insert(0, item)
 
+
+print(f"list:{to_reverse}")
+print(f"reverse list:{backwards}")
 print("end of program")

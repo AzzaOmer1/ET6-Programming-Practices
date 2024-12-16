@@ -38,6 +38,11 @@ def append__pure(items: list, new_value: str) -> list:
 _2_list_before = ["x", "y"]
 _2_list_after = append__pure(_2_list_before, "z")
 
+#edit or add print down
+print(f"""
+    list_before:{_2_list_before}
+    list_after:{_2_list_after}""")
+
 print("end of script")
 
 # * https://pythontutor.com/render.html#code=def%20append__side_effect%28items%3A%20list,%20new_value%3A%20str%29%20-%3E%20list%3A%0A%20%20%20%20items.append%28new_value%29%0A%20%20%20%20return%20items%0A%0A_1_list_before%20%3D%20%5B'a',%20'b'%5D%0A_1_list_after%20%3D%20append__side_effect%28_1_list_before,%20'c'%29%0A%0A%0Adef%20append__pure%28items%3A%20list,%20new_value%3A%20str%29%20-%3E%20list%3A%0A%20%20%20%20updated_list%20%3D%20items.copy%28%29%0A%20%20%20%20updated_list.append%28new_value%29%0A%20%20%20%20return%20updated_list%0A%0A_2_list_before%20%3D%20%5B'x',%20'y'%5D%0A_2_list_after%20%3D%20append__pure%28_2_list_before,%20'z'%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false
